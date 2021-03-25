@@ -1,0 +1,10 @@
+.Carousel {
+  margin-top: 80px;
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: unset;
+    bottom: unset;
+    display: inline;
+  }
+}

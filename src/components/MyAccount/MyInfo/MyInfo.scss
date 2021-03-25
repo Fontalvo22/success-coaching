@@ -1,0 +1,92 @@
+.MyInfo {
+  .update-plan {
+    font-size: 13px;
+    margin-left: 10px;
+  }
+
+  .plan-img {
+    border: 2px solid #cecdcd;
+    border-radius: 5px;
+  }
+  .progress {
+    padding: 3px;
+    background-color: #202630;
+    height: 25px;
+    border-radius: 10px;
+  }
+  .progress-bar {
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  /*.info-second {
+    padding-top: 75px !important;
+    padding-bottom: 75px !important;
+  }*/
+  .refer-frame {
+    border: 1px solid #202630;
+    margin: 18px 0px;
+  }
+  .info-frame {
+    padding: 10px;
+  }
+  /*.invite {
+    font-size: 13px;
+  }*/
+  .share-btn {
+    background: transparent;
+    color: #111;
+    border: none;
+  }
+  .tooltip-social-media {
+    background-color: #fff;
+  }
+  .frame-container {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+  }
+
+  .share-social-media-btn {
+    background-color: transparent;
+    color: #111;
+    border: none;
+  }
+  .into-frame {
+    max-height: 100%;
+    text-align: center;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .refer-frame {
+      margin: 0px;
+      font-size: 10px;
+    }
+    div.invite-frame {
+      margin: 25px 0px !important;
+    }
+    .plan-img {
+      height: 170px;
+    }
+  }
+
+  @media only screen and (max-width: 426px) {
+    .refer-frame {
+      font-size: 20px;
+    }
+
+    .update-plan {
+      font-size: 20px;
+    }
+    .progress-bar {
+      font-size: 20px;
+    }
+    .my-actual-plan {
+      font-size: 20px;
+    }
+  }
+}

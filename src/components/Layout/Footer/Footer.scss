@@ -1,0 +1,26 @@
+.Footer {
+  background-color: #ededed;
+  padding: 30px;
+  padding-bottom: 0px;
+  .list-group-item {
+    background-color: transparent;
+    border: 0px;
+    color: #111;
+  }
+
+  #message {
+    background-color: #4a4a4a;
+    border: 0px;
+    padding: 9px;
+    transition: ease 0.1s;
+  }
+  #message:focus {
+    border-radius: 0px !important;
+    border: 0px solid #111 !important;
+    background-color: #fff;
+  }
+  .send-footer {
+    display: flex;
+    align-items: center;
+  }
+}

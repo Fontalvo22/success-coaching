@@ -1,0 +1,35 @@
+.NavSections {
+  margin-top: 80px;
+  margin-bottom: 60px;
+
+  .nav-item {
+    border: 1px solid #111;
+    border-top: 2px solid #111;
+    border-bottom: 2px solid #111;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-link {
+    width: inherit;
+  }
+
+  .nav-item {
+    padding: 20px;
+  }
+  .selected {
+    background-color: #fff !important;
+    color: #111 !important;
+  }
+
+  NavLink {
+    padding: 0px;
+  }
+
+  .first-nav {
+    border-left: 2px solid #111;
+  }
+  .last-nav {
+    border-right: 2px solid #111;
+  }
+}

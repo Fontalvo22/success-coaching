@@ -1,0 +1,19 @@
+.Courses {
+  .row {
+    padding: 0px 60px;
+  }
+  .course-message {
+    color: #af2d2d;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 5px !important;
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .documents-available {
+      font-size: 10px;
+    }
+  }
+}
