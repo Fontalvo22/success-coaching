@@ -5,4 +5,32 @@
   .container-nav {
     padding: 20px !important;
   }
+
+  @media only screen and (max-width: 425px) {
+    nav {
+      position: fixed;
+      top: 63px;
+      bottom: 0px;
+      z-index: 11;
+      left: -120vw;
+      width: 100% !important;
+      transition: ease 0.5s;
+      display: block;
+    }
+    nav .navbar-brand {
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid #fff;
+    }
+
+    nav .navbar-brand:nth-last-child(1) {
+      border-bottom: 0px;
+    }
+    .toggle-nav {
+      z-index: 200;
+    }
+    .nav-active {
+      left: 0px;
+    }
+  }
 }

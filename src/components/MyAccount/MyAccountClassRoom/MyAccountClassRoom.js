@@ -3,9 +3,17 @@ import NavSections from '../NavSections/NavSections';
 import { NavLink } from 'react-router-dom';
 import { Player, CurrentTimeDisplay, TimeDivider, ControlBar, PlaybackRateMenuButton, ReplayControl, ForwardControl } from 'video-react';
 
+
+import {Accordion, Button} from 'react-bootstrap';
 import './MyAccountClassRoom.scss';
 
 const MyAccountClassRoom = () => {
+  let width = window.innerWidth;
+  let active = null;
+
+  if (width >= 768) {
+    active = '0';
+  }
 
   return (
     <div className="MyAccountClassRoom container">
@@ -16,37 +24,50 @@ const MyAccountClassRoom = () => {
       </div>
 
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 px-0 lections-container">
-          <div className="navbar-collapse" id="navbarText">
-            <ul className="navbar-nav mr-auto w-100">
-              <NavLink className="nav-link text-white p-0 nav-link bg-simple text-dark my-2 p-3 text-center app-title" activeClassName="selected" to="/my-account">
-                <li className="nav-item first-nav">
-                  Clase 1
-              </li>
-              </NavLink>
-              <NavLink className="nav-link text-white p-0 nav-link bg-simple text-dark my-2 p-3 text-center" activeClassName="selected" exact to="/my-profile">
-                <li className="nav-item">
-                  Clase 2
-              </li>
-              </NavLink>
-              <NavLink className="nav-link text-white p-0 nav-link bg-simple text-dark my-2 p-3 text-center" activeClassName="selected" to="/events">
-                <li className="nav-item">
-                  Clase 3
-              </li>
-              </NavLink>
-              <NavLink className="nav-link text-white p-0 nav-link bg-simple text-dark my-2 p-3 text-center" activeClassName="selected" to="/my-refers">
-                <li className="nav-item">
-                  Clase 4
-              </li>
-              </NavLink>
-              <NavLink className="nav-link text-white p-0 nav-link bg-simple text-dark my-2 p-3 text-center" activeClassName="selected" to="/my-classroom">
-                <li className="nav-item last-nav">
-                  Clase 5
-              </li>
-              </NavLink>
-            </ul>
-          </div>
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 px-0 lections-container">
+
+      <Accordion defaultActiveKey={active}>
+
+      <Accordion.Toggle as={Button} variant="link" eventKey="0" className="d-block d-md-none">
+       
+        <span className="toggle-nav">- - -</span>
+
+      </Accordion.Toggle>
+
+      <Accordion.Collapse eventKey="0">
+        <div className="navbar-collapse" id="navbarText">
+          <ul className="navbar-nav mr-auto w-100">
+            <NavLink className="nav-link text-white p-0 nav-link bg-simple text-dark my-2 p-3 text-center app-title" activeClassName="selected" to="/my-account">
+              <li className="nav-item first-nav">
+                Clase 1
+            </li>
+            </NavLink>
+            <NavLink className="nav-link text-white p-0 nav-link bg-simple text-dark my-2 p-3 text-center" activeClassName="selected" exact to="/my-profile">
+              <li className="nav-item">
+                Clase 2
+            </li>
+            </NavLink>
+            <NavLink className="nav-link text-white p-0 nav-link bg-simple text-dark my-2 p-3 text-center" activeClassName="selected" to="/events">
+              <li className="nav-item">
+                Clase 3
+            </li>
+            </NavLink>
+            <NavLink className="nav-link text-white p-0 nav-link bg-simple text-dark my-2 p-3 text-center" activeClassName="selected" to="/my-refers">
+              <li className="nav-item">
+                Clase 4
+            </li>
+            </NavLink>
+            <NavLink className="nav-link text-white p-0 nav-link bg-simple text-dark my-2 p-3 text-center" activeClassName="selected" to="/my-classroom">
+              <li className="nav-item last-nav">
+                Clase 5
+            </li>
+            </NavLink>
+          </ul>
         </div>
+
+      </Accordion.Collapse>
+      </Accordion>
+      </div>
 
 
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
@@ -82,14 +103,14 @@ const MyAccountClassRoom = () => {
           </div>
 
           <div className="my-5">
-            <p><span>C</span>Certificado</p>
+            <p><span>C </span>Certificado</p>
           </div>
 
           <div className="my-5">
-            <p><span>L</span>Libros</p>
+            <p><span>L </span>Libros</p>
           </div>
           <div className="my-5">
-            <p><span>E</span>Examen</p>
+            <p><span>E </span>Examen</p>
           </div>
 
 

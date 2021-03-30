@@ -1,6 +1,20 @@
 .NavSections {
-  margin-top: 80px;
-  margin-bottom: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  .navbar {
+    padding: 0px;
+  }
+  @media only screen and (min-width: 768px) {
+    .NavSections {
+      margin-top: 80px;
+      margin-bottom: 60px;
+    }
+
+    .navbar {
+      padding: 0.5rem 1rem;
+    }
+  }
 
   .nav-item {
     border: 1px solid #111;

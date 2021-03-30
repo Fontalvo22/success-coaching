@@ -14,15 +14,11 @@ function Footer() {
                                 <li className="list-group-item font-weight-bold">Lorem Ipsum</li>
                                 <li className="list-group-item">Lorem Ipsum</li>
                                 <li className="list-group-item">Lorem Ipsum</li>
-                                <li className="list-group-item">Lorem Ipsum</li>
-                                <li className="list-group-item">Lorem Ipsum</li>
                             </ul>
 
                         </div>
                         <div className="col-xs-12 col-md-2 col-lg-2 col-xl-2">
                             <ul className="list-group">
-                                <li className="list-group-item">Lorem Ipsum</li>
-                                <li className="list-group-item">Lorem Ipsum</li>
                                 <li className="list-group-item">Lorem Ipsum</li>
                                 <li className="list-group-item">Lorem Ipsum</li>
                                 <li className="list-group-item">Lorem Ipsum</li>

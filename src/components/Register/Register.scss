@@ -4,4 +4,33 @@
     font-weight: 600;
     font-size: 20px !important;
   }
+  .inputs-container {
+    max-width: 100%;
+  }
+
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #af2d2d;
+    border-color: #af2d2d;
+  }
+  .switch-container {
+    margin-top: 40px;
+  }
+
+  .custom-control-label {
+    font-size: 15px;
+  }
+
+  .label-name {
+    margin-top: 60px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .switch-container {
+      margin-top: 40px;
+    }
+
+    .label-name {
+      margin-top: 0px;
+    }
+  }
 }

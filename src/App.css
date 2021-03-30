@@ -30,6 +30,7 @@
   background-color: #e1e1e1;
   padding: 5px;
   border: 0px;
+  max-width: 100%;
 }
 
 .click-here {
@@ -51,4 +52,13 @@
 .frame-btn {
   border: 1px solid #111;
   font-weight: 500;
+}
+
+.app-frame {
+  border: 1px solid #111;
+}
+
+.input-title {
+  font-weight: 500;
+  color: #111;
 }

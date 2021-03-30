@@ -9,21 +9,24 @@ import Home from '../Home/Home';
 import Login from '../Login/Login';
 import NotFound from '../NotFound/NotFound';
 import MyAccount from '../MyAccount/MyAccount';
-
+import GiftCodes from '../MyAccount/GiftCodes/GiftCodes';
 import EventsIndex from '../EventsIndex/EventsIndex';
 import MyAccountProfile from '../MyAccount/MyAccountProfile/MyAccountProfile';
 import MyAccountRefers from '../MyAccount/MyAccountRefers/MyAccountRefers';
 import MyAccountClassRoom from '../MyAccount/MyAccountClassRoom/MyAccountClassRoom';
-
+import MyConfig from '../MyAccount/MyConfig/MyConfig';
 
 import "./Layout.scss";
+function prueba() {
+    console.log('listo');
+}
 
 function Layout(props) {
-
+    let toggleMenu = null;
     return (
         <>
             <Router>
-                <NavBar isLoged={false} />
+                <NavBar isLoged={false} toggleMenu={toggleMenu} />
 
                 <Switch>
 
@@ -50,6 +53,13 @@ function Layout(props) {
                         <MyAccountClassRoom />
                     </Route>
 
+                    <Route path="/my-config">
+                        <MyConfig />
+                    </Route>
+                    <Route path="/gift-codes">
+                        <GiftCodes />
+                    </Route>
+
 
                     <Route path="/register">
                         <Register />
@@ -63,7 +73,6 @@ function Layout(props) {
                     </Route>
 
                 </Switch>
-
                 <Footer />
             </Router>
         </>

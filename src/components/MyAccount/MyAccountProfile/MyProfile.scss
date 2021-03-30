@@ -5,4 +5,14 @@
   .left-side {
     border-right: 2px solid rgb(206, 206, 206);
   }
+
+  .user-info {
+    padding-left: 0px !important;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .user-info {
+      padding-left: 3rem !important;
+    }
+  }
 }
