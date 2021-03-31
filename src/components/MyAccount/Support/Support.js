@@ -31,7 +31,7 @@ const Support = () => {
                     <p className="m-0">
                       Preguntas Frecuentes
                     </p>
-                    <span>-></span>
+                    <span>---</span>
 
                   </Accordion.Toggle>
 
