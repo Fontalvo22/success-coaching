@@ -41,50 +41,50 @@ function Layout(props) {
                 <NavBar isLoged={logged} user={user} toggleMenu={toggleMenu} />
 
                 <Switch>
-                    <Route exact path="/">
+                    <Route exact path="success-coaching/">
                         <Home />
                     </Route>
 
-                    <AuthRoute path="/my-account" auth={logged}>
+                    <AuthRoute path="success-coaching/my-account" auth={logged}>
                         <MyAccount user={user} />
                     </AuthRoute>
 
-                    <Route path="/events">
+                    <Route path="success-coaching/events">
                         <EventsIndex />
                     </Route>
 
-                    <AuthRoute path="/my-profile" auth={logged} >
+                    <AuthRoute path="success-coaching/my-profile" auth={logged} >
                         <MyAccountProfile user={user} />
                     </AuthRoute>
 
-                    <AuthRoute path="/my-refers" auth={logged}>
+                    <AuthRoute path="success-coaching/my-refers" auth={logged}>
                         <MyAccountRefers />
                     </AuthRoute>
 
-                    <AuthRoute path="/my-classroom" auth={logged}>
+                    <AuthRoute path="success-coaching/my-classroom" auth={logged}>
                         <MyAccountClassRoom />
                     </AuthRoute>
 
-                    <AuthRoute path="/my-config" auth={logged}>
+                    <AuthRoute path="success-coaching/my-config" auth={logged}>
                         <MyConfig />
                     </AuthRoute>
-                    <AuthRoute path="/gift-codes" auth={logged}>
+                    <AuthRoute path="success-coaching/gift-codes" auth={logged}>
                         <GiftCodes />
                     </AuthRoute>
 
-                    <AuthRoute path="/my-banks" auth={logged}>
+                    <AuthRoute path="success-coaching/my-banks" auth={logged}>
                         <MyBanks />
                     </AuthRoute>
 
-                    <AuthRoute path="/support" auth={logged}>
+                    <AuthRoute path="success-coaching/support" auth={logged}>
                         <Support />
                     </AuthRoute>
 
 
-                    <Route path="/register">
+                    <Route path="success-coaching/register">
                         <Register />
                     </Route>
-                    <Route path="/login">
+                    <Route path="success-coaching/login">
                         <Login />
                     </Route>
 
