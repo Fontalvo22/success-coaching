@@ -23,8 +23,8 @@ const MyAccountClassRoom = () => {
         <div className="col-12 col-md-6 app-bg text-white mb-5 p-1">Clase 1</div>
       </div>
 
-      <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 px-0 lections-container">
+      <div className="row">
+      <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 px-0 lections-container">
 
       <Accordion defaultActiveKey={active}>
 
@@ -70,7 +70,7 @@ const MyAccountClassRoom = () => {
       </div>
 
 
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
           <Player className="video" playsInline poster="https://picsum.photos/600/360" src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4">
             <ControlBar>
               <CurrentTimeDisplay disabled />
@@ -97,7 +97,7 @@ const MyAccountClassRoom = () => {
         </div>
 
 
-        <div class="col-md-3 col-lg-3 col-xl-3 text-center p-3 lections-container ">
+        <div className="col-md-3 col-lg-3 col-xl-3 text-center p-3 lections-container ">
           <div>
             <p className="frame-btn p-2">Plan</p>
           </div>

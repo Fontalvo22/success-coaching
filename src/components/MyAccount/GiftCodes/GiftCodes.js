@@ -11,7 +11,7 @@ const GiftCodes = () => {
 
       <div className="row">
         <LateralMenu />
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
           <section className="resumen-lection app-frame px-4 py-3">
             <div className="row text-center justify-content-center">
               <div className="col-12 app-bg text-white mb-4 p-1">Comprar Códigos</div>

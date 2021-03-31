@@ -11,7 +11,6 @@ const EventsIndex = () => {
     setShow(true);
   }
 
-
   return (
     <div className="EventsIndex container">
       <NavSections />

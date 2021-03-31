@@ -62,3 +62,7 @@
   font-weight: 500;
   color: #111;
 }
+
+.border-red {
+  border: 1px solid red;
+}

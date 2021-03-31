@@ -17,10 +17,10 @@ const LateralMenu = () => {
               Códigos de regalo
               </li>
           </NavLink>
-          <NavLink className="nav-link text-white p-0 nav-link bg-simple text-dark my-2 p-3 text-center" activeClassName="app-title" to="bank-accounts">
+          <NavLink className="nav-link text-white p-0 nav-link bg-simple text-dark my-2 p-3 text-center" activeClassName="app-title" to="my-banks">
             <li className="nav-item">
               Cuentas de banco
-              </li>
+            </li>
           </NavLink>
           <NavLink className="nav-link text-white p-0 nav-link bg-simple text-dark my-2 p-3 text-center" activeClassName="app-title" to="/support">
             <li className="nav-item">

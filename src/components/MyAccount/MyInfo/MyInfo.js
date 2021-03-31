@@ -3,10 +3,12 @@ import { OverlayTrigger, Button, Popover } from 'react-bootstrap';
 
 import './MyInfo.scss';
 
-const MyInfo = () => {
+const MyInfo = (props) => {
 
   const [show, setShow] = useState(false);
   const target = useRef(null);
+
+  const user = JSON.parse(props.user);
 
   const popover = (
     <Popover id="popover-basic">
@@ -57,7 +59,7 @@ const MyInfo = () => {
           <section className="info bg-simple p-3 frame-container">
             <div className="into-frame">
               <article className="refer-frame py-2 d-flex justify-content-center">
-                <p className="mb-0 text-center"> Success.com / Username </p>
+                <p className="mb-0 text-center"> Success.com / {user.userName} </p>
               </article>
               <div className="text-center my-5 invite-frame">
                 <p className="invite">Invita a tu equipo a compartir tu código de referido</p>

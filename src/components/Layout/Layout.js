@@ -1,4 +1,4 @@
-import React, { useContext, createContext, useState } from "react";
+import React, { useContext, useState, createContext } from "react";
 import NavBar from './NavBar/NavBar';
 import Footer from './Footer/Footer';
 
@@ -15,50 +15,70 @@ import MyAccountProfile from '../MyAccount/MyAccountProfile/MyAccountProfile';
 import MyAccountRefers from '../MyAccount/MyAccountRefers/MyAccountRefers';
 import MyAccountClassRoom from '../MyAccount/MyAccountClassRoom/MyAccountClassRoom';
 import MyConfig from '../MyAccount/MyConfig/MyConfig';
+import AuthRoute from './AuthRoute/AuthRoute';
+import MyBanks from '../MyAccount/MyBanks/MyBanks';
+import Support from '../MyAccount/Support/Support';
 
 import "./Layout.scss";
-function prueba() {
-    console.log('listo');
-}
 
 function Layout(props) {
     let toggleMenu = null;
+
+
+    let logged = false;
+    const user = localStorage.getItem('user');
+
+
+    if (user != null) {
+        logged = true;
+    } else {
+        logged = false;
+    }
+
     return (
         <>
             <Router>
-                <NavBar isLoged={false} toggleMenu={toggleMenu} />
+                <NavBar isLoged={logged} user={user} toggleMenu={toggleMenu} />
 
                 <Switch>
-
                     <Route exact path="/">
                         <Home />
                     </Route>
 
-                    <Route path="/my-account">
-                        <MyAccount />
-                    </Route>
+                    <AuthRoute path="/my-account" auth={logged}>
+                        <MyAccount user={user} />
+                    </AuthRoute>
 
                     <Route path="/events">
                         <EventsIndex />
                     </Route>
-                    <Route path="/my-profile">
-                        <MyAccountProfile />
-                    </Route>
 
-                    <Route path="/my-refers">
+                    <AuthRoute path="/my-profile" auth={logged} >
+                        <MyAccountProfile user={user} />
+                    </AuthRoute>
+
+                    <AuthRoute path="/my-refers" auth={logged}>
                         <MyAccountRefers />
-                    </Route>
+                    </AuthRoute>
 
-                    <Route path="/my-classroom">
+                    <AuthRoute path="/my-classroom" auth={logged}>
                         <MyAccountClassRoom />
-                    </Route>
+                    </AuthRoute>
 
-                    <Route path="/my-config">
+                    <AuthRoute path="/my-config" auth={logged}>
                         <MyConfig />
-                    </Route>
-                    <Route path="/gift-codes">
+                    </AuthRoute>
+                    <AuthRoute path="/gift-codes" auth={logged}>
                         <GiftCodes />
-                    </Route>
+                    </AuthRoute>
+
+                    <AuthRoute path="/my-banks" auth={logged}>
+                        <MyBanks />
+                    </AuthRoute>
+
+                    <AuthRoute path="/support" auth={logged}>
+                        <Support />
+                    </AuthRoute>
 
 
                     <Route path="/register">
@@ -74,6 +94,7 @@ function Layout(props) {
 
                 </Switch>
                 <Footer />
+
             </Router>
         </>
     );
