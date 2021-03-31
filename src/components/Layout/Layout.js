@@ -34,14 +34,15 @@ function Layout(props) {
     } else {
         logged = false;
     }
-
+    // Donde dice slash success-coaching es para pruebas en githubPages
     return (
         <>
             <Router>
                 <NavBar isLoged={logged} user={user} toggleMenu={toggleMenu} />
 
                 <Switch>
-                    <Route exact path="success-coaching/">
+
+                    <Route exact path=":prueba/">
                         <Home />
                     </Route>
 
