@@ -34,7 +34,6 @@ function Layout(props) {
     } else {
         logged = false;
     }
-    // Donde dice slash success-coaching es para pruebas en githubPages
     return (
         <>
             <Router>
@@ -42,50 +41,50 @@ function Layout(props) {
 
                 <Switch>
 
-                    <Route exact path=":prueba/">
+                    <Route exact path="/">
                         <Home />
                     </Route>
 
-                    <AuthRoute path="success-coaching/my-account" auth={logged}>
+                    <AuthRoute path="/my-account" auth={logged}>
                         <MyAccount user={user} />
                     </AuthRoute>
 
-                    <Route path="success-coaching/events">
+                    <Route path="/events">
                         <EventsIndex />
                     </Route>
 
-                    <AuthRoute path="success-coaching/my-profile" auth={logged} >
+                    <AuthRoute path="/my-profile" auth={logged} >
                         <MyAccountProfile user={user} />
                     </AuthRoute>
 
-                    <AuthRoute path="success-coaching/my-refers" auth={logged}>
+                    <AuthRoute path="/my-refers" auth={logged}>
                         <MyAccountRefers />
                     </AuthRoute>
 
-                    <AuthRoute path="success-coaching/my-classroom" auth={logged}>
+                    <AuthRoute path="/my-classroom" auth={logged}>
                         <MyAccountClassRoom />
                     </AuthRoute>
 
-                    <AuthRoute path="success-coaching/my-config" auth={logged}>
+                    <AuthRoute path="/my-config" auth={logged}>
                         <MyConfig />
                     </AuthRoute>
-                    <AuthRoute path="success-coaching/gift-codes" auth={logged}>
+                    <AuthRoute path="/gift-codes" auth={logged}>
                         <GiftCodes />
                     </AuthRoute>
 
-                    <AuthRoute path="success-coaching/my-banks" auth={logged}>
+                    <AuthRoute path="/my-banks" auth={logged}>
                         <MyBanks />
                     </AuthRoute>
 
-                    <AuthRoute path="success-coaching/support" auth={logged}>
+                    <AuthRoute path="/support" auth={logged}>
                         <Support />
                     </AuthRoute>
 
 
-                    <Route path="success-coaching/register">
+                    <Route path="/register">
                         <Register />
                     </Route>
-                    <Route path="success-coaching/login">
+                    <Route path="/login">
                         <Login />
                     </Route>
 
