@@ -7,11 +7,11 @@ const AuthRoute = (props) => {
     let token = localStorage.getItem('authToken');
 
     if (props.auth) {
-        return (<Route path={props.path}>
+        return (<Route path={'/success-coching/' + props.path}>
             {props.children}
         </Route>)
     } else {
-        return <Redirect to="/login" />
+        return <Redirect to="/success-coching/login" />
 
     }
 

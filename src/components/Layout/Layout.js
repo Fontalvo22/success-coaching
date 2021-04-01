@@ -34,6 +34,7 @@ function Layout(props) {
     } else {
         logged = false;
     }
+    //lo de success-coaching es solo para probar en github pages
     return (
         <>
             <Router>

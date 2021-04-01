@@ -32,13 +32,9 @@ function Login(props) {
               if (validate) {
                 window.location = "/my-account";
               }
-
-
             }
             }>Inicia sesión</button>
           </div>
-
-
         </div>
       </div>
     </div>
